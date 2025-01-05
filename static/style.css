@@ -1,0 +1,278 @@
+:root {
+    --primary-color: #6C63FF;      /* Vibrant purple */
+    --secondary-color: #FF6B6B;    /* Coral pink */
+    --accent-color: #4ECDC4;       /* Turquoise */
+    --dark-color: #2D3436;         /* Dark gray */
+    --light-color: #F7F7F7;        /* Off white */
+    --success-color: #00B894;      /* Green */
+    --gradient-start: #6C63FF;     /* Purple */
+    --gradient-end: #FF6B6B;       /* Coral */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    padding: 1.2rem 0;
+    box-shadow: 0 4px 20px rgba(108, 99, 255, 0.2);
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: white !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navbar-brand i {
+    color: var(--accent-color);
+    margin-right: 0.8rem;
+    font-size: 2rem;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, rgba(108, 99, 255, 0.95), rgba(255, 107, 107, 0.95)),
+                url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3');
+    background-size: cover;
+    background-position: center;
+    padding: 6rem 0;
+    color: white;
+    text-align: center;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    margin-bottom: 5rem;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.hero-section p {
+    font-size: 1.4rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Search Form */
+.search-form-container {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    margin: -100px auto 50px;
+    max-width: 1000px;
+    position: relative;
+    z-index: 2;
+}
+
+.form-label {
+    font-weight: 600;
+    color: var(--dark-color);
+    margin-bottom: 0.8rem;
+    font-size: 0.95rem;
+}
+
+.form-control {
+    border: 2px solid #E0E0E0;
+    padding: 0.8rem 1.2rem;
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background-color: #F8F9FA;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 4px rgba(108, 99, 255, 0.1);
+    background-color: white;
+}
+
+.search-btn {
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    border: none;
+    padding: 1rem 3rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.search-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(108, 99, 255, 0.3);
+}
+
+/* Property Cards */
+.property-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    margin-bottom: 2rem;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.property-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+}
+
+.property-image {
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.property-card:hover .property-image {
+    transform: scale(1.05);
+}
+
+.property-details {
+    padding: 1.8rem;
+}
+
+.property-price {
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+}
+
+.property-address {
+    color: var(--dark-color);
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.property-features {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2rem 0;
+    border-top: 1px solid #eee;
+    margin-top: 1rem;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    color: var(--dark-color);
+    font-weight: 500;
+}
+
+.feature-item i {
+    margin-right: 0.8rem;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.view-property-btn {
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 12px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.9rem;
+}
+
+.view-property-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(108, 99, 255, 0.3);
+    color: white;
+}
+
+/* Loading Spinner */
+.spinner-border {
+    width: 3.5rem;
+    height: 3.5rem;
+    color: var(--primary-color);
+}
+
+/* Alerts */
+.alert {
+    border-radius: 12px;
+    padding: 1.2rem;
+    font-weight: 500;
+    border: none;
+}
+
+.alert-info {
+    background-color: rgba(108, 99, 255, 0.1);
+    color: var(--primary-color);
+}
+
+.alert-danger {
+    background-color: rgba(255, 107, 107, 0.1);
+    color: var(--secondary-color);
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    color: white;
+    padding: 3rem 0;
+    margin-top: 5rem;
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin: 0 1rem;
+    font-size: 1.5rem;
+}
+
+.footer a:hover {
+    color: var(--accent-color);
+    transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 4rem 0;
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .search-form-container {
+        margin-top: -50px;
+        padding: 1.5rem;
+        border-radius: 15px;
+    }
+
+    .search-btn {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .property-card {
+        margin-bottom: 1.5rem;
+    }
+}
