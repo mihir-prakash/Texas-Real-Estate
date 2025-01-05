@@ -3,6 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 import logging
 import re
+import os
 
 # Set up logging
 logging.basicConfig(level=logging.DEBUG)
@@ -207,4 +208,4 @@ def search():
         return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':
-    app.run(debug=True, port=3000)
+    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
