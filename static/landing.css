@@ -273,9 +273,9 @@ body {
 
 /* Footer */
 .footer {
+    padding: 20px 0;
     background: var(--dark-color);
     color: white;
-    padding: 80px 0 30px;
 }
 
 .footer h3 {
@@ -310,8 +310,8 @@ body {
 
 .footer-bottom {
     text-align: center;
-    margin-top: 3rem;
-    padding-top: 2rem;
+    margin-top: 0;
+    padding-top: 0;
     border-top: 1px solid rgba(255,255,255,0.1);
 }
 
